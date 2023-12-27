@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 100%;
+    width: 100%;
+ 
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("img/main4.jpg");
+    background-size: contain;
+    background-position: center
+}
+.overlay{
+    position: absolute;
+    z-index: 0.5;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(83, 81, 81, 0.452);
+}
+@media  (max-width: 480px){
+    .navbar{
+        position: relative;
+        height: 60px;
+        min-width: 80vw;
+        margin: 0px  10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 4;
+    }
+   
+    .search {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search button {
+        height:40px;
+        width: 40px;
+        border-radius: 50%;
+        border:none;
+        background-color:rgba(0, 0, 0, 0.9);
+        color:white;
+        font-size: 22px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        height: 55px;
+    }
+    .albums{
+        position: relative;
+     height: 250px;
+     min-width: 80vw;
+     margin: 0px 10px;
+     border-radius: 20px;
+     overflow-x: hidden;
+    }
+    .albums h3{
+        margin-left: 9px;
+        margin-top: 8px;
+        font-size: 6.5vw;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    .photocontainer{
+       height: 200px;
+       display: flex;
+       min-width: 90vw;
+       border-radius: 20px;
+       overflow-x: scroll; 
+       overflow-y: hidden; 
+    }
+    .albumphoto1{
+        height: 100%;
+        width: 100%;
+        margin: 0px 10px;
+        object-fit: cover;
+        object-position: center;
+        flex-direction: column;
+    }
+    .albumphoto1 img{
+        border-radius: 20px;
+        height:100%;
+        width: 90vw;
+       object-fit: cover;
+    }
+    .albumphoto1 h4{
+    align-items: end;
+    }
+
+   /* secondpage */
+    .container{
+         height:160px;
+         min-width: 90vw;
+         background-color: rgb(255, 255, 255);
+         border-radius: 20px;
+         margin: 0 25px; 
+         margin-top:8px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-column-gap:10px ;
+         overflow: hidden;
+         position: relative;    
+    }
+    .arrow{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        margin-top:3px;
+        margin-right:20px;
+        font-family:fantasy;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .arrow i{
+        font-size: 22px;
+        text-align: center;
+    }
+    .slider{ 
+        margin-top: 30px;
+        padding: 0px 5px;
+        height: 66%;
+        width: 95%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .cover1{
+        height: 100%;
+        width: 100%;
+    }
+    .cover1 h3{
+        z-index: 3;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3.8vw;
+    }
+    .cover1 img{
+        border-radius: 10px;
+        height:100%;
+        width: 100%;
+    }
+
+    .songlist{
+        overflow-y:hidden; 
+        height:200px;
+        margin: 0 20px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        margin-top: 10px;
+        background-image: url('img/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .songlistnav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        padding-top: 10px;
+        font-family: 'Bebas Neue', sans-serif;
+      
+    }
+
+    .songiteam{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+        border:2px solid rgb(28, 28, 29);
+        border-radius: 20px;
+        background-color: rgba(228, 220, 225, 0.299);
+        backdrop-filter: blur(10px);
+        font-size: 3.5vw;
+        padding-right: 16px;
+        font-weight: bold;
+        margin: 2px 0;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .songiteam img{
+        height: 45px;
+        border-radius: 20px;
+    }
+    .songiteam i{
+        font-size: 20px;
+        border-radius:50%;
+        border: 2px solid rgb(4, 4, 4);
+    }
+        
+    /* MUSIcBR */
+    .status{
+        margin: 0 20px;
+        border-radius: 15px;
+        height: 66px;
+        width: 92vw;
+        margin-top: 10px;
+        position: sticky;
+        bottom: 0;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        background-color: rgba(0, 0, 0, 0.472);
+        backdrop-filter: blur(10px);
+    }
+    .status .incons{
+       margin-top: 8px;
+    }
+    #progressbar{
+        width: 85%;
+        
+    }
+
+}
